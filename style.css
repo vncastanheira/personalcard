@@ -60,10 +60,11 @@ label {
   color: whitesmoke;
   height: 5em;
   background-color: var(--back);
+  margin: 20px;
 }
 
 .links-group__link > * {
-  margin: 20px;
+  margin-right: 10px;
 }
 
 .links-group__link > span {
@@ -77,14 +78,21 @@ label {
 @media only screen and (max-width: 600px) {
   .card {
     background-color: rgba(10, 10, 9, 0.0);
-    width: 300px;
+    width: 320px;
     height: 90vh;
     padding: 0 50px;
   }
 
   .banner {
     background-color: var(--back);
-    padding: 6px;
     border-radius: 12px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+
+  .links-group__link {
+    margin: 10px 0px;
+    padding: 20px;
+    height: 2em;
   }
 }
