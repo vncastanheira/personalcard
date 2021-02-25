@@ -1,0 +1,20 @@
+{
+  "name": "personal_card",
+  "version": "1.0.0",
+  "description": "My personal card",
+  "main": "index.js",
+  "scripts": {
+    "start": "parcel index.html",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vncastanheira/personalcad.git"
+  },
+  "author": "Vinícius Castanheira",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/vncastanheira/personalcad/issues"
+  },
+  "homepage": "https://github.com/vncastanheira/personalcad#readme"
+}
