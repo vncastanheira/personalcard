@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "start": "parcel index.html style.css",
+    "build": "parcel build index.html style.css",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -16,5 +17,8 @@
   "bugs": {
     "url": "https://github.com/vncastanheira/personalcad/issues"
   },
-  "homepage": "https://github.com/vncastanheira/personalcad#readme"
+  "homepage": "https://github.com/vncastanheira/personalcad#readme",
+  "devDependencies": {
+    "cssnano": "^4.1.10"
+  }
 }
