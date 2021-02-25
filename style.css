@@ -1,0 +1,73 @@
+body {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+  align-items: center;
+  align-content: stretch;
+  background-color: black;
+  background-image: url("background.webp");
+  background-repeat: no-repeat;
+  font-family: Arial, sans-serif;
+}
+
+.card {
+  background-color: rgba(10, 10, 9, 0.9);
+  width: 500px;
+  padding: 0 50px;
+  height: 100vh;
+}
+
+.banner {
+  color: whitesmoke;
+  text-align: center;
+  margin-bottom: 80px;
+}
+
+h1 {
+  text-transform: uppercase;
+  font-weight: bolder;
+  padding: 0;
+  margin-bottom: 5px;
+}
+
+.banner > label {
+  color: grey;
+}
+
+h4 {
+  color: lightgrey;
+}
+
+label {
+  font-style: italic;
+}
+
+.links-group {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  margin-top: 40px;
+}
+
+.links-group__link {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid whitesmoke;
+  color: whitesmoke;
+  height: 5em;
+}
+
+.links-group__link > * {
+  margin: 20px;
+}
+
+.links-group__link > span {
+  font-size: xx-large;
+}
+
+.links-group__link--spacing {
+  font-weight: 5em;
+}
