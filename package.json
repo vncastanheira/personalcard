@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "start": "parcel src/index.html src/style.css src/background.webp",
-    "build": "parcel build src/*.pug src/style.css",
+    "build": "parcel build src/*.pug src/*.css",
     "test": "echo \"Error: no test specified\" && exit 1",
     "pug": "parcel src/*.pug src/style.css"
   },

@@ -1,18 +1,18 @@
 doctype html
-html(lang="en")
+html
   head 
     include head.pug
   body 
-    div(class="card")
-      div(class="banner")
+    div.card
+      div.banner
         h1 Vinícius Castanheira</h1>
         label aka Epiplon
         br
         h4 Artista Plástico e Digital
-      div(class="links-group")
+      div.links-group
         - let  list = [{ "title": "Instagram", "icon": "fa-instagram", "link": "https://www.instagram.com/cast_vn" }, { "title": "Youtube", "icon": "fa-youtube", "link": "https://www.youtube.com/channel/UCDOBW8PgA6UohHkt8IeOhtA" }]
         each item in list
-          div(class="links-group__link", onclick="window.open('" + item.link + "', '_blank');", style="cursor: pointer;")
+          div.links-group__link(onclick="window.open('" + item.link + "', '_blank');", style="cursor: pointer;")
             i(class="fab "+ item.icon + " fa-3x")
             span= item.title
   footer
