@@ -5,12 +5,14 @@ html
   body 
     div.card
       div.banner
-        h1 Vinícius Castanheira</h1>
+        h1 Vinícius Castanheira
         label aka Epiplon
         br
         h4 Artista Plástico e Digital
       div.links-group
-        - let  list = [{ "title": "Instagram", "icon": "fa-instagram", "link": "https://www.instagram.com/cast_vn" }, { "title": "Youtube", "icon": "fa-youtube", "link": "https://www.youtube.com/channel/UCDOBW8PgA6UohHkt8IeOhtA" }]
+        - let instagram = { "title": "Instagram", "icon": "fa-instagram", "link": "https://www.instagram.com/cast_vn" }
+        - let youtube = { "title": "Youtube", "icon": "fa-youtube", "link": "https://www.youtube.com/channel/UCDOBW8PgA6UohHkt8IeOhtA" }
+        - let  list = [instagram, youtube]
         each item in list
           div.links-group__link(onclick="window.open('" + item.link + "', '_blank');", style="cursor: pointer;")
             i(class="fab "+ item.icon + " fa-3x")
