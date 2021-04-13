@@ -1,0 +1,4 @@
+This is a Brave Rewards publisher verification file.
+
+Domain: castvn.art
+Token: 2458dbd1dc240af0db41063855c2bf6d4ca5d5f52275f5738d67b898a8c2a937
