@@ -12,8 +12,8 @@ html
       div.links-group
         - let instagram = { "title": "Instagram", "icon": "fab fa-instagram", "link": "https://www.instagram.com/cast_vn" }
         - let youtube = { "title": "Youtube", "icon": "fab fa-youtube", "link": "https://www.youtube.com/channel/UCDOBW8PgA6UohHkt8IeOhtA" }
-        - let adobeportfolio = { "title": "Fotografias", "icon": "fas fa-camera-retro", "link": "https://viniciuscastanheira.myportfolio.com/fotografia" }
-        - let  list = [instagram, youtube, adobeportfolio]
+        - let photos = { "title": "Fotografias", "icon": "fas fa-camera-retro", "link": "https://viniciuscastanheira.myportfolio.com/fotografia" }
+        - let  list = [photos, instagram, youtube, ]
         each item in list
           div.links-group__link(onclick="window.open('" + item.link + "', '_blank');", style="cursor: pointer;")
             i(class=item.icon + " fa-3x")
