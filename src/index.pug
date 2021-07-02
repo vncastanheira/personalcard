@@ -8,14 +8,15 @@ html
         h1 Vinícius Castanheira
         label aka Epiplon
         br
-        h4 Artista Plástico e Digital
+        h4 Artista Plástico, Digital e Fotográfico
       div.links-group
-        - let instagram = { "title": "Instagram", "icon": "fa-instagram", "link": "https://www.instagram.com/cast_vn" }
-        - let youtube = { "title": "Youtube", "icon": "fa-youtube", "link": "https://www.youtube.com/channel/UCDOBW8PgA6UohHkt8IeOhtA" }
-        - let  list = [instagram, youtube]
+        - let instagram = { "title": "Instagram", "icon": "fab fa-instagram", "link": "https://www.instagram.com/cast_vn" }
+        - let youtube = { "title": "Youtube", "icon": "fab fa-youtube", "link": "https://www.youtube.com/channel/UCDOBW8PgA6UohHkt8IeOhtA" }
+        - let adobeportfolio = { "title": "Fotografias", "icon": "fas fa-camera-retro", "link": "https://viniciuscastanheira.myportfolio.com/fotografia" }
+        - let  list = [instagram, youtube, adobeportfolio]
         each item in list
           div.links-group__link(onclick="window.open('" + item.link + "', '_blank');", style="cursor: pointer;")
-            i(class="fab "+ item.icon + " fa-3x")
+            i(class=item.icon + " fa-3x")
             span= item.title
   footer
     include footer.pug
